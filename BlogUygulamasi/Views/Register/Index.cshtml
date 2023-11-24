@@ -1,0 +1,257 @@
+﻿
+@{
+    Layout = null;
+}
+@model User
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+@await Html.PartialAsync("_HeaderCss")
+
+<body>
+	@await Html.PartialAsync("_Header")
+	<section class="main-content-w3layouts-agileits">
+		<div class="container">
+			<h3 class="tittle">Register Now</h3>
+			<div class="inner-sec">
+				<div class="login p-5 bg-light mx-auto mw-100">
+					<form action="/Register/Index" method="post">
+						<div class="form-row">
+							<div class="col-md-6 mb-3">
+								<label for="validationCustom01">Username</label>
+
+								<input asp-for="Username" type="text" class="form-control" id="validationDefault01" placeholder="" required="">
+							</div>
+							<div class="col-md-6 mb-3">
+								<label for="exampleInputPassword1">Password</label>
+								<input asp-for="Password" type="password" class="form-control" id="password1" placeholder="" required="">
+							</div>
+						</div>
+						<div class="form-row">
+
+							<div class="form-group col-md-6">
+								<label for="exampleInputPassword2 mb-2">Photo</label>
+								<input asp-for="PhotoUrl" type="text" class="form-control" id="photoUrl" placeholder="">
+							</div>
+
+						</div>
+						<button type="submit" class="btn btn-primary submit mb-4">Register</button>
+						<p>
+							<a href="#">By clicking Signup, I agree to your terms</a>
+						</p>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--//main-->
+	<!--footer-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 footer-grid-agileits-w3ls text-left">
+					<h3>About US</h3>
+					<p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. lacinia eget consectetur sed, convallis at tellus..</p>
+					<div class="read">
+						<a href="single.html" class="btn btn-primary read-m">Read More</a>
+					</div>
+				</div>
+				<div class="col-lg-4 footer-grid-agileits-w3ls text-left">
+
+					<div class="tech-btm">
+						<h3>Latest Posts</h3>
+						<div class="blog-grids row mb-3">
+							<div class="col-md-5 blog-grid-left">
+								<a href="single.html">
+									<img src="images/4.jpg" class="img-fluid" alt="">
+								</a>
+							</div>
+							<div class="col-md-7 blog-grid-right">
+
+								<h5>
+									<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+								</h5>
+								<div class="sub-meta">
+									<span>
+										<i class="far fa-clock"></i> 20 Jan, 2018
+									</span>
+								</div>
+							</div>
+
+						</div>
+						<div class="blog-grids row mb-3">
+							<div class="col-md-5 blog-grid-left">
+								<a href="single.html">
+									<img src="images/5.jpg" class="img-fluid" alt="">
+								</a>
+							</div>
+							<div class="col-md-7 blog-grid-right">
+
+								<h5>
+									<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+								</h5>
+								<div class="sub-meta">
+									<span>
+										<i class="far fa-clock"></i> 20 Jan, 2018
+									</span>
+								</div>
+							</div>
+
+						</div>
+						<div class="blog-grids row mb-3">
+							<div class="col-md-5 blog-grid-left">
+								<a href="single.html">
+									<img src="images/6.jpg" class="img-fluid" alt="">
+								</a>
+							</div>
+							<div class="col-md-7 blog-grid-right">
+
+								<h5>
+									<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+								</h5>
+								<div class="sub-meta">
+									<span>
+										<i class="far fa-clock"></i> 20 Jan, 2018
+									</span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- subscribe -->
+				<div class="col-lg-4 subscribe-main footer-grid-agileits-w3ls text-left">
+					<h2>Signup to our newsletter</h2>
+					<div class="subscribe-main text-left">
+						<div class="subscribe-form">
+							<form action="#" method="post" class="subscribe_form">
+								<input class="form-control" type="email" placeholder="Enter your email..." required="">
+								<button type="submit" class="btn btn-primary submit">Submit</button>
+							</form>
+							<div class="clearfix"> </div>
+						</div>
+						<p>We respect your privacy.No spam ever!</p>
+					</div>
+					<!-- //subscribe -->
+				</div>
+			</div>
+			<!-- footer -->
+			<div class="footer-cpy text-center">
+				<div class="footer-social">
+					<div class="copyrighttop">
+						<ul>
+							<li class="mx-3">
+								<a class="facebook" href="#">
+									<i class="fab fa-facebook-f"></i>
+									<span>Facebook</span>
+								</a>
+							</li>
+							<li>
+								<a class="facebook" href="#">
+									<i class="fab fa-twitter"></i>
+									<span>Twitter</span>
+								</a>
+							</li>
+							<li class="mx-3">
+								<a class="facebook" href="#">
+									<i class="fab fa-google-plus-g"></i>
+									<span>Google+</span>
+								</a>
+							</li>
+							<li>
+								<a class="facebook" href="#">
+									<i class="fab fa-pinterest-p"></i>
+									<span>Pinterest</span>
+								</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="w3layouts-agile-copyrightbottom">
+					<p>
+						© 2018 Weblog. All Rights Reserved | Design by
+						<a href="http://w3layouts.com/">W3layouts</a>
+					</p>
+
+				</div>
+			</div>
+
+			<!-- //footer -->
+
+
+		</div>
+	</footer>
+	<!---->
+	<!-- js -->
+	<script src="~/coreblogtema/web/js/jquery-2.2.3.min.js"></script>
+	<!-- //js -->
+	<!-- password-script -->
+	<script>
+		window.onload = function () {
+			document.getElementById("password1").onchange = validatePassword;
+			document.getElementById("password2").onchange = validatePassword;
+		}
+
+		function validatePassword() {
+			var pass2 = document.getElementById("password2").value;
+			var pass1 = document.getElementById("password1").value;
+			if (pass1 != pass2)
+				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+			else
+				document.getElementById("password2").setCustomValidity('');
+			//empty string means no validation error
+		}
+	</script>
+	<!-- //password-script -->
+	<!--/ start-smoth-scrolling -->
+	<script src="~/coreblogtema/web/js/move-top.js"></script>
+	<script src="~/coreblogtema/web/js/easing.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 900);
+			});
+		});
+	</script>
+	<!--// end-smoth-scrolling -->
+
+	<script>
+		$(document).ready(function () {
+			/*
+									var defaults = {
+											containerID: 'toTop', // fading element id
+										containerHoverID: 'toTopHover', // fading element hover id
+										scrollSpeed: 1200,
+										easingType: 'linear'
+										};
+									*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<a href="#home" class="scroll" id="toTop" style="display: block;">
+		<span id="toTopHover" style="opacity: 1;"> </span>
+	</a>
+
+	<!-- //Custom-JavaScript-File-Links -->
+	<script src="~/coreblogtema/web/js/bootstrap.js"></script>
+
+
+</body>
+
+</html>
